@@ -26,35 +26,47 @@
    }
   </style>
   <style>
-a.button9 {
-  position: relative;
+/* сочетание цветов бесподобно, как-будто кнопка загорается */
+a.button14 {
   display: inline-block;
-  color: #777674;
-  font-weight: bold;
+  text-shadow: 1px 1px #fff;
   text-decoration: none;
-  text-shadow: rgba(255,255,255,.5) 1px 1px, rgba(100,100,100,.3) 3px 7px 3px;
-  user-select: none;
-  padding: 1em 2em;
+  padding: .3em 1em;
+  border: 1px solid #aaa;
+  border-radius: 100px;
   outline: none;
-  border-radius: 3px / 100%;
+  background: #d6dbbf no-repeat;
   background-image:
-   linear-gradient(45deg, rgba(255,255,255,.0) 30%, rgba(255,255,255,.8), rgba(255,255,255,.0) 70%),
-   linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0) 20%, rgba(255,255,255,0) 90%, rgba(255,255,255,.3)),
-   linear-gradient(to right, rgba(125,125,125,1), rgba(255,255,255,.9) 45%, rgba(125,125,125,.5)),
-   linear-gradient(to right, rgba(125,125,125,1), rgba(255,255,255,.9) 45%, rgba(125,125,125,.5)),
-   linear-gradient(to right, rgba(223,190,170,1), rgba(255,255,255,.9) 45%, rgba(223,190,170,.5)),
-   linear-gradient(to right, rgba(223,190,170,1), rgba(255,255,255,.9) 45%, rgba(223,190,170,.5));
-  background-repeat: no-repeat;
-  background-size: 200% 100%, auto, 100% 2px, 100% 2px, 100% 1px, 100% 1px;
-  background-position: 200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
-  box-shadow: rgba(0,0,0,.5) 3px 10px 10px -10px;
+   linear-gradient(to left, #aaa, #aaa),
+   linear-gradient(to left, #feffe8, #feffe8),
+   linear-gradient(#feffe8, #d6dbbf);
+  background-position: calc(100% - 2.7em) 0, calc(100% - 2.7em + 1px) 0, 0 0;
+  background-size: 1px 100%, 1px 100%, auto auto;
+  overflow: hidden;
 }
-a.button9:hover {
-  transition: .5s linear;
-  background-position: -200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
+a.button14:after {
+  content: "\bb";
+  position: relative;
+  bottom: 0;
+  display: inline-block;
+  margin-left: 1.4em;
+  vertical-align: middle;
+  font-family: "Times","Times New Roman","serif","sans-serif","EmojiSymbols";
+  font-weight: 700;
+  font-size: 140%;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
-a.button9:active {
-  top: 1px;
+a.button14:hover {
+  background-color: #fdfd9f;
+  background-image:
+   linear-gradient(to left, #aaa, #aaa),
+   linear-gradient(to left, #feffe8, #feffe8),
+   linear-gradient(#fffce7, #fdfd9f);
+}
+a.button14:active:after {
+  bottom: -1.2em;
+  transition: .3s;
 }
   </style>
  </body>
@@ -64,6 +76,6 @@ a.button9:active {
 <h3>Программа для разблокировки социальных сетей в Украине</h3>
 <img src=https://unsocnet.github.io/USN.png><br>
 <form action="https://dl.dropboxusercontent.com/content_link/VPBFKiXpUcL1q6DxfgAJwSDMLqsW7wb355xSb7oktqjB8tuaxVCBIrDVoq632KNm/file?dl=1">
-    <button class="button9" type="submit">Скачать</button>
+    <button class="button14" type="submit">Скачать</button>
 </form>
 
